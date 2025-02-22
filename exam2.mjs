@@ -17,14 +17,14 @@ console.log(fromInchesToMm(3))
 
 // a function that returns the root of a number
 
-
+ANSI.COLOR.GREEN = '/x1b[23m'
 
 
 // a function that returns the cube of a number
 function cubeOfNumber(number) {
     return number * number * number
 }
-console.log(cubeOfNumber(2))
+console.log(ANSI.COLOR.GREEN + cubeOfNumber(2))
 
 
 // A function that returns the area of a cirkle given radius.
