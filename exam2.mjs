@@ -1,6 +1,6 @@
 //import { isNotANumber } from "./testing.mjs";
 
-// Task 
+
 
 // function that returns the square of a number
 function squareOfNumber(number) {
@@ -11,6 +11,8 @@ function squareOfNumber(number) {
     }
 }
 console.log(squareOfNumber(7))
+
+
 
 
 // function that returns a length in mm assuming it has been given a length in inches. 
@@ -25,6 +27,8 @@ function fromInchesToMm(number) {
 console.log(fromInchesToMm(5));
 
 
+
+
 // a function that returns the root of a number
 function rootOfNumber(number) {
     if (typeof number == "number") {
@@ -34,6 +38,9 @@ function rootOfNumber(number) {
     }
 }
 console.log(rootOfNumber(64))
+
+
+
 
 // a function that returns the cube of a number
 function cubeOfNumber(number) {
@@ -46,12 +53,17 @@ function cubeOfNumber(number) {
 console.log(cubeOfNumber(4))
 
 
+
+
 // A function that returns the area of a cirkle given radius.
 function areaOfCirkle(r) {
     const PI = 3.14;
     return (PI * r * r);
 }
 console.log(areaOfCirkle(10))
+
+
+
 
 // function that returns a greeting, given a name. 
 function greet(name) {
@@ -63,47 +75,27 @@ function greet(name) {
     }
 }
 console.log(greet("TONY/CHRISTIAN!"));
-/*
+
+
+
+
+// Task 2 + 3 in new file { jsonTaskNode.js } beacuse require did not work in mjs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import { isNotANumber } from "./testing.mjs";
 isNotANumber(fromInchesToMm("S"), "BC s not number");
 isNotANumber(rootOfNumber([4]), "not a number");
 isNotANumber(squareOfNumber(NaN), "NOT A NUMBER");
 */
-
-
-
-// Task 2. Flatten those numbers.
-let array = [
-    435,
-    2028,
-    [
-        [
-            3047, 4910, 8146,
-            7999, 1433, 7211,
-            1197, 6002
-        ],
-        2821,
-        3508
-    ]
-]
-
-function flatten(array) {
-    const newList = [];
-
-    for (let i = 0; i < array.length; i++) {
-        const numberElement = array[i];
-        if (typeof numberElement === "number") {
-            newList.push(numberElement);
-        } else if (Array.isArray(numberElement)) {
-            const nyeTall = flatten(numberElement);
-            newList.push(...nyeTall);
-        }
-    }
-
-    return newList
-}
-console.log(flatten(array));
-
-// Task 3 in new file { jsonTaskNode.js } beacuse require did not work in mjs...
-
-
-
